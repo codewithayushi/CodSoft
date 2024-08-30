@@ -1,0 +1,286 @@
+/* Define color and spacing variables */
+:root {
+    --primary-color: #5ebed1;
+    --secondary-color: #f39c12;
+    --hover-color: #0056b3;
+    --cta-hover-color: #e67e22;
+    --background-color: #d6d0c6;
+    --text-color: #333;
+    --card-background: #fff;
+    --card-border: #080808;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a.buy-now {
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+nav ul li a.search {
+    background: #28a745;
+    border-radius: 4px;
+}
+
+nav ul li a:hover, nav ul li a.buy-now:hover, nav ul li a.search:hover {
+    opacity: 0.8;
+}
+
+.hero {
+    background: url('c:\Users\Dell\Downloads\danist-soh-8Gg2Ne_uTcM-unsplash.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background: var(--secondary-color);
+    color: #322222;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--cta-hover-color);
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 210%;
+}
+
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--card-background);
+    color: #0c0c0c;
+}
+
+section:nth-of-type(even) {
+    background: url('c:\Users\Dell\Downloads\joanna-kosinska-1_CMoFsPfso-unsplash.jpg') no-repeat center center/cover;
+    color: #0b0b0b;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgb(11, 11, 11);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #0c0c0c;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial {
+    background: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(17, 17, 17, 0.95);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial cite {
+    display: block;
+    font-weight: bold;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(11, 11, 11, 0.992);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--card-border);
+    border-radius: 4px;
+}
+
+button {
+    background: var(--primary-color);
+    color: #050505;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--hover-color);
+}
+
+footer {
+    background: var(--primary-color);
+    color: #000000;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 4rem 2rem;
+        position: relative;
+    }
+    
+    .hero-image {
+        display: none;
+    }
+}
